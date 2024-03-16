@@ -33,6 +33,29 @@ export const Navbar:FC = () => {
           >
             Інформаційна система
           </NavLink>
+
+          <NavLink
+            to="/clasification"
+            className={
+              ({ isActive }) => classNames(
+                'navbar-item',
+                { 'is-active': isActive },
+              )
+            }
+          >
+            Класифікація
+          </NavLink>
+          <NavLink
+            to="/map"
+            className={
+              ({ isActive }) => classNames(
+                'navbar-item',
+                { 'is-active': isActive },
+              )
+            }
+          >
+            Інтелект карта
+          </NavLink>
         </div>
       </div>
     </nav>

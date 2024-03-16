@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { TabsPage } from './components/TabsPage';
+import { Classif } from './components/Classif';
+import image from './Еколого-економічні збитки..png';
 
 const tabs = [
   {
@@ -114,7 +116,9 @@ export const App = () => (
               </>
             )}
           />
+          <Route path="map" element={<img src={image} alt="eko map" style={{ width: '100vw' }} />} />
           <Route path="home" element={<Navigate to="/" replace />} />
+          <Route path="clasification" element={<Classif />} />
           <Route path="*" element={<h1 className="title">Page not found</h1>} />
         </Routes>
       </div>
